@@ -1,6 +1,7 @@
+#2 #3
 import math
 
-class Ppyunto:
+class Punto:
   def __init__(self, x, y):
     self.x = x
     self.y = y
@@ -20,8 +21,13 @@ class Ppyunto:
 
 
   def calcular_distancia(self, punto):
-    math.sqrt()
+    print("La distancia entre los puntos es:")
+    return math.sqrt(
+        (self.x - punto) ** 2 +
+        (self.y - punto) ** 2
+                    )
 
-P=punto(5, 6)
+P=Punto(5, 6)
 P.mostrar()
 P.mover(1, 3)
+P.calcular_distancia(2)
