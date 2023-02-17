@@ -22,10 +22,10 @@ class Punto:
 
   def calcular_distancia(self, punto):
     print("La distancia entre los puntos es:")
-    return math.sqrt(
+    print(math.sqrt(
         (self.x - punto) ** 2 +
         (self.y - punto) ** 2
-                    )
+                    ))
 
 P=Punto(5, 6)
 P.mostrar()
